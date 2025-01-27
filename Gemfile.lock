@@ -320,6 +320,8 @@ GEM
     sqlite3 (2.5.0-aarch64-linux-musl)
     sqlite3 (2.5.0-arm-linux-gnu)
     sqlite3 (2.5.0-arm-linux-musl)
+    sqlite3 (2.5.0-x86-linux-gnu)
+    sqlite3 (2.5.0-x86-linux-musl)
     sqlite3 (2.5.0-x86_64-linux-gnu)
     sqlite3 (2.5.0-x86_64-linux-musl)
     sshkit (1.23.2)
@@ -369,6 +371,8 @@ PLATFORMS
   arm-linux-gnu
   arm-linux-musl
   ruby
+  x86-linux-gnu
+  x86-linux-musl
   x86_64-linux
   x86_64-linux-gnu
   x86_64-linux-musl
