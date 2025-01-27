@@ -1,0 +1,35 @@
+<% content_for :title, "Editing friend" %>
+
+<h1>Editing friend</h1>
+
+<%= form_with(model: @friend, local: true) do |form|%>
+<br>
+<form>
+  <div class="mb-3">
+    <%= form.label :first_name, class:"form-label"%>
+    <%= form.text_field :first_name,class:"form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= form.label :last_name, class:"form-label"%>
+    <%= form.text_field :last_name,class:"form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= form.label :email, class:"form-label"%>
+    <%= form.text_field :email,class:"form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= form.label :phone, class:"form-label"%>
+    <%= form.text_field :phone,class:"form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= form.label :twitter, class:"form-label"%>
+    <%= form.text_field :twitter,class:"form-control" %>
+  </div>
+  <div>
+    <%= form.submit class:"btn btn-secondary"%>
+    <%= link_to "Back", @friend, class:"btn btn-dark" %>
+    <%= link_to "Friends List", friends_path, class:"btn btn-secondary" %>
+    <%= button_to "Delete", @friend, class:"btn btn-danger", method: :delete %>
+  </div>
+</form>
+<%end%>
